@@ -13,24 +13,32 @@ struct CardView: View {
     var body: some View {
         HStack {
             Image(systemName: "circle.fill").foregroundColor(event.color)
+                .padding(.trailing)
 
             VStack(alignment: .leading) {
-                Text("\(event.title)")
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel(Text("Participant"))
-                    .accessibilityValue(Text("\(event.title)"))
-                    .font(.headline)
+                HStack {
+                    Text("\(event.title)")
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel(Text("Participant"))
+                        .accessibilityValue(Text("\(event.title)"))
+                        .font(.headline)
+                        Spacer()
+                        Text(event.notes ?? "")
+                }
                 Spacer()
                 HStack {
-                    let notesString = event.notes ?? ""
-                    Label(notesString, systemImage: "note")
-                    Spacer()
-
                     let dateString = DateFormatter.mediumStyleDateFormatter.string(from: event.startDate)
-                    Text(dateString)
+                    Text("Starts: " + dateString)
                         .accessibilityElement(children: .ignore)
                         .accessibilityLabel(Text("Start date"))
                         .accessibilityValue(Text(dateString))
+
+                    Spacer()
+
+                    if let recurrenceRule = event.recurrenceRules?.first,
+                       let frequency = recurrenceRule.frequency.description {
+                                Text("Frequency: " + frequency)
+                            }
                 }
                 .font(.caption)
             }
