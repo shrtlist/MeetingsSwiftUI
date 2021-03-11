@@ -9,5 +9,5 @@
 import Foundation
 
 extension Notification.Name {
-    static let eventsDidChange = Notification.Name("EKEXeventsDidChange")
+    static let eventsDidChange = Notification.Name("EKeventsDidChange")
 }

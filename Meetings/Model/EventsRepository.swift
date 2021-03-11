@@ -13,7 +13,7 @@ import Combine
 
 typealias Action = () -> ()
 
-class EventsRepository: ObservableObject {
+final class EventsRepository: ObservableObject {
     static let shared = EventsRepository()
     
     private var subscribers: Set<AnyCancellable> = []

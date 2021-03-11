@@ -1,5 +1,5 @@
 //
-//  MeetingsView.swift
+//  ContentView.swift
 //  Meetings
 //
 //  Created by Marco Abundo on 2/15/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import EventKit
 
-struct MeetingsView: View {
+struct ContentView: View {
     enum ActiveSheet {
         case calendarChooser
         case calendarEdit
@@ -92,7 +92,7 @@ struct MeetingsView: View {
 struct MeetingsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            MeetingsView(events: .constant(EKEvent.data))
+            ContentView(events: .constant(EKEvent.data))
         }
     }
 }

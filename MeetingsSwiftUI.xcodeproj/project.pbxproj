@@ -10,6 +10,7 @@
 		21293C2825B25F54000DD0B1 /* MeetingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21293C2725B25F54000DD0B1 /* MeetingsApp.swift */; };
 		21293C2C25B25F57000DD0B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21293C2B25B25F57000DD0B1 /* Assets.xcassets */; };
 		21293C2F25B25F57000DD0B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21293C2E25B25F57000DD0B1 /* Preview Assets.xcassets */; };
+		21729F2225FA8DE5008A8AD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21729F2125FA8DE5008A8AD9 /* ContentView.swift */; };
 		21EAB41225D49B65007A00DB /* SelectedCalendarsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EAB41125D49B65007A00DB /* SelectedCalendarsList.swift */; };
 		21EAB41625D49C04007A00DB /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EAB41525D49C04007A00DB /* PrimaryButtonStyle.swift */; };
 		21EAB41A25D49C75007A00DB /* CalendarChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EAB41925D49C75007A00DB /* CalendarChooser.swift */; };
@@ -17,7 +18,6 @@
 		21F011E825C4E54000A82878 /* ContactPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F011E725C4E54000A82878 /* ContactPicker.swift */; };
 		21F0123325C9E3B200A82878 /* EventsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0123225C9E3B200A82878 /* EventsRepository.swift */; };
 		21F0128825CA531300A82878 /* MeetingScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0128725CA531300A82878 /* MeetingScheduleView.swift */; };
-		21F0129B25CB261E00A82878 /* MeetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0129A25CB261E00A82878 /* MeetingsView.swift */; };
 		21F0129F25CB275C00A82878 /* MeetingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0129E25CB275C00A82878 /* MeetingDetailView.swift */; };
 		21F012AB25CB2A1600A82878 /* EKCalendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F012A725CB2A1600A82878 /* EKCalendar+Extension.swift */; };
 		21F012AC25CB2A1600A82878 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F012A825CB2A1600A82878 /* Notifications.swift */; };
@@ -34,6 +34,7 @@
 		21293C2B25B25F57000DD0B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21293C2E25B25F57000DD0B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		21293C3025B25F57000DD0B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21729F2125FA8DE5008A8AD9 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21EAB41125D49B65007A00DB /* SelectedCalendarsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedCalendarsList.swift; sourceTree = "<group>"; };
 		21EAB41525D49C04007A00DB /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		21EAB41925D49C75007A00DB /* CalendarChooser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarChooser.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		21F011E725C4E54000A82878 /* ContactPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPicker.swift; sourceTree = "<group>"; };
 		21F0123225C9E3B200A82878 /* EventsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
 		21F0128725CA531300A82878 /* MeetingScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingScheduleView.swift; sourceTree = "<group>"; };
-		21F0129A25CB261E00A82878 /* MeetingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingsView.swift; sourceTree = "<group>"; };
 		21F0129E25CB275C00A82878 /* MeetingDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingDetailView.swift; sourceTree = "<group>"; };
 		21F012A725CB2A1600A82878 /* EKCalendar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EKCalendar+Extension.swift"; sourceTree = "<group>"; };
 		21F012A825CB2A1600A82878 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
@@ -82,19 +82,16 @@
 		21293C2625B25F54000DD0B1 /* Meetings */ = {
 			isa = PBXGroup;
 			children = (
-				21EAB41925D49C75007A00DB /* CalendarChooser.swift */,
 				21293C2725B25F54000DD0B1 /* MeetingsApp.swift */,
-				21F012B225CB2D1200A82878 /* CardView.swift */,
+				21729F2425FA8E3D008A8AD9 /* Views */,
+				21729F2625FA8E7E008A8AD9 /* Model */,
+				21F012A625CB2A1600A82878 /* Extensions */,
+				21EAB41925D49C75007A00DB /* CalendarChooser.swift */,
 				21F011E725C4E54000A82878 /* ContactPicker.swift */,
-				21F0123225C9E3B200A82878 /* EventsRepository.swift */,
-				21F0129E25CB275C00A82878 /* MeetingDetailView.swift */,
-				21F0128725CA531300A82878 /* MeetingScheduleView.swift */,
-				21F0129A25CB261E00A82878 /* MeetingsView.swift */,
-				21EAB41525D49C04007A00DB /* PrimaryButtonStyle.swift */,
 				21EAB41125D49B65007A00DB /* SelectedCalendarsList.swift */,
+				21EAB41525D49C04007A00DB /* PrimaryButtonStyle.swift */,
 				21293C2B25B25F57000DD0B1 /* Assets.xcassets */,
 				21293C3025B25F57000DD0B1 /* Info.plist */,
-				21F012A625CB2A1600A82878 /* Extensions */,
 				21293C2D25B25F57000DD0B1 /* Preview Content */,
 			);
 			path = Meetings;
@@ -106,6 +103,25 @@
 				21293C2E25B25F57000DD0B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21729F2425FA8E3D008A8AD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21F012B225CB2D1200A82878 /* CardView.swift */,
+				21729F2125FA8DE5008A8AD9 /* ContentView.swift */,
+				21F0129E25CB275C00A82878 /* MeetingDetailView.swift */,
+				21F0128725CA531300A82878 /* MeetingScheduleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		21729F2625FA8E7E008A8AD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21F0123225C9E3B200A82878 /* EventsRepository.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		21F012A625CB2A1600A82878 /* Extensions */ = {
@@ -197,8 +213,8 @@
 				21F012B325CB2D1200A82878 /* CardView.swift in Sources */,
 				21F012BA25CBA8C300A82878 /* DateFormatter+Extensions.swift in Sources */,
 				21293C2825B25F54000DD0B1 /* MeetingsApp.swift in Sources */,
-				21F0129B25CB261E00A82878 /* MeetingsView.swift in Sources */,
 				21EAB41225D49B65007A00DB /* SelectedCalendarsList.swift in Sources */,
+				21729F2225FA8DE5008A8AD9 /* ContentView.swift in Sources */,
 				21EAB4BE25DB4AAE007A00DB /* EKRecurrenceRule+Extensions.swift in Sources */,
 				21F012AC25CB2A1600A82878 /* Notifications.swift in Sources */,
 				21EAB41A25D49C75007A00DB /* CalendarChooser.swift in Sources */,

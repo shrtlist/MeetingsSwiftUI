@@ -14,7 +14,7 @@ struct MeetingsApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MeetingsView(events: $data.events)
+                ContentView(events: $data.events)
             }
             .onAppear {
                 data.loadEvents(completion: { events in
