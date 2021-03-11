@@ -89,7 +89,7 @@ struct MeetingsView: View {
     }
 }
 
-struct GiftsView_Previews: PreviewProvider {
+struct MeetingsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             MeetingsView(events: .constant(EKEvent.data))
