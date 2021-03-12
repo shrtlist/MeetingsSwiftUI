@@ -66,6 +66,8 @@ struct ContentView: View {
 
                             events.append(newEvent)
 
+                            eventsRepository.save(newEvent)
+
                             isPresented = false
                         }.disabled(disableAddButton))
                     }

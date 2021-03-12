@@ -9,6 +9,7 @@ import SwiftUI
 import EventKit
 
 struct MeetingDetailView: View {
+    @ObservedObject var eventsRepository = EventsRepository.shared
     @Binding var event: EKEvent
     @State private var data: EKEvent.Data = EKEvent.Data()
     @State private var isPresented = false
@@ -86,6 +87,7 @@ struct MeetingDetailView: View {
                     }, trailing: Button("Done" ) {
                         isPresented = false
                         event.update(from: data)
+                        eventsRepository.save(event)
                     }.disabled(disableDoneButton))
             }
         }
