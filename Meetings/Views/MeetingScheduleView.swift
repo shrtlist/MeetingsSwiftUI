@@ -13,7 +13,7 @@ struct MeetingScheduleView: View {
     @Binding var eventData: EKEvent.Data
     @State private var showPicker = false
     @State private var focus = false
-    @State private var frequency = 0
+    @State private var frequency = EKRecurrenceFrequency.yearly.rawValue
 
     var body: some View {
         ZStack {
