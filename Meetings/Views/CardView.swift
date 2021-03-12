@@ -13,7 +13,6 @@ struct CardView: View {
     var body: some View {
         HStack {
             Image(systemName: "circle.fill").foregroundColor(event.color)
-                .padding(.trailing)
 
             VStack(alignment: .leading) {
                 HStack {
