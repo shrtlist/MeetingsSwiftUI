@@ -88,7 +88,6 @@
 				21F012A625CB2A1600A82878 /* Extensions */,
 				21EAB41925D49C75007A00DB /* CalendarChooser.swift */,
 				21F011E725C4E54000A82878 /* ContactPicker.swift */,
-				21EAB41125D49B65007A00DB /* SelectedCalendarsList.swift */,
 				21EAB41525D49C04007A00DB /* PrimaryButtonStyle.swift */,
 				21293C2B25B25F57000DD0B1 /* Assets.xcassets */,
 				21293C3025B25F57000DD0B1 /* Info.plist */,
@@ -112,6 +111,7 @@
 				21729F2125FA8DE5008A8AD9 /* ContentView.swift */,
 				21F0129E25CB275C00A82878 /* MeetingDetailView.swift */,
 				21F0128725CA531300A82878 /* MeetingScheduleView.swift */,
+				21EAB41125D49B65007A00DB /* SelectedCalendarsList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +119,10 @@
 		21729F2625FA8E7E008A8AD9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21F012A725CB2A1600A82878 /* EKCalendar+Extension.swift */,
+				21F012AA25CB2A1600A82878 /* EKEvent+Extension.swift */,
+				21FF791625CC98820030F752 /* EKRecurrenceFrequency+Extensions.swift */,
+				21EAB4BD25DB4AAE007A00DB /* EKRecurrenceRule+Extensions.swift */,
 				21F0123225C9E3B200A82878 /* EventsRepository.swift */,
 			);
 			path = Model;
@@ -128,10 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				21F012B925CBA8C300A82878 /* DateFormatter+Extensions.swift */,
-				21F012A725CB2A1600A82878 /* EKCalendar+Extension.swift */,
-				21F012AA25CB2A1600A82878 /* EKEvent+Extension.swift */,
-				21FF791625CC98820030F752 /* EKRecurrenceFrequency+Extensions.swift */,
-				21EAB4BD25DB4AAE007A00DB /* EKRecurrenceRule+Extensions.swift */,
 				21F012A825CB2A1600A82878 /* Notifications.swift */,
 				21F012A925CB2A1600A82878 /* TimeInterval+Extension.swift */,
 			);
