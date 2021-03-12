@@ -76,6 +76,7 @@ struct ContentView: View {
         }
         .navigationBarTitle("Meetings")
         .navigationBarItems(trailing: Button(action: {
+            newEventData = EKEvent.Data()
             self.activeSheet = .calendarEdit
             self.isPresented = true
         }, label: {
