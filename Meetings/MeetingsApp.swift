@@ -16,11 +16,6 @@ struct MeetingsApp: App {
             NavigationView {
                 ContentView(events: $data.events)
             }
-            .onAppear {
-                data.loadEvents(completion: { events in
-                    print("Loaded events")
-                })
-            }
         }
     }
 }
