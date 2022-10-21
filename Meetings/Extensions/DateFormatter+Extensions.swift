@@ -7,7 +7,7 @@
 
 import Foundation
 
-public extension DateFormatter {
+extension DateFormatter {
 
     private struct CachedFormatters {
         static var mediumDateFormatter: DateFormatter = {
