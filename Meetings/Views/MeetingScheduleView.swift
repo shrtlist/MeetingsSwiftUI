@@ -44,7 +44,7 @@ struct MeetingScheduleView: View {
                     HStack {
                         Label("Frequency", systemImage: "repeat")
                         Picker("", selection: $frequency) {
-                            ForEach(0 ..< EKRecurrenceFrequency.allCases.count) { frequency in
+                            ForEach(0 ..< EKRecurrenceFrequency.allCases.count, id: \.self) { frequency in
                                 let recurrenceFrequency = EKRecurrenceFrequency.allCases[frequency]
                                 let frequencyString = String(describing: recurrenceFrequency)
                                 Text(frequencyString)
@@ -66,7 +66,7 @@ struct MeetingScheduleView: View {
                     HStack {
                         Label("Duration", systemImage: "hourglass")
                         Picker("", selection: $eventData.durationType) {
-                            ForEach(0 ..< DurationType.allCases.count) { value in
+                            ForEach(0 ..< DurationType.allCases.count, id: \.self) { value in
                                 let durationTypeString = DurationType.allCases[value].description
                                 Text("\(durationTypeString)")
                             }
