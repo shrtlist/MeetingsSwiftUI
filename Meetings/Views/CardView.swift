@@ -34,8 +34,8 @@ struct CardView: View {
 
                     Spacer()
 
-                    if let recurrenceRule = event.recurrenceRules?.first,
-                       let frequency = recurrenceRule.frequency.description {
+                    if let recurrenceRule = event.recurrenceRules?.first {
+                        let frequency = recurrenceRule.frequency.description
                                 Text("Frequency: " + frequency)
                             }
                 }

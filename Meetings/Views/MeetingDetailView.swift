@@ -35,9 +35,9 @@ struct MeetingDetailView: View {
                 }
             }
 
-            if let recurrenceRule = event.recurrenceRules?.first,
-               let frequency = recurrenceRule.frequency.description {
+            if let recurrenceRule = event.recurrenceRules?.first {
                 Section(header: Text("Meeting Recurrence")) {
+                    let frequency = recurrenceRule.frequency.description
                     HStack {
                         Label("Frequency", systemImage: "repeat")
                         Spacer()
