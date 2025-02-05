@@ -29,9 +29,7 @@ struct ContentView: View {
         VStack {
             List {
                 if events.isEmpty {
-                    Text("No events available for this calendar selection")
-                        .font(.headline)
-                        .foregroundColor(.secondary)
+                    ContentUnavailableView("No events available for this calendar selection", systemImage: "calendar.badge.exclamationmark")
                 }
 
                 ForEach(events, id: \.self.eventIdentifier) { event in

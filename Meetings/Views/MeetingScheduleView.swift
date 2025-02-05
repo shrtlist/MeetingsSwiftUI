@@ -50,12 +50,12 @@ struct MeetingScheduleView: View {
                                 Text(frequencyString)
                             }
                         }
-                        .onChange(of: frequency, perform: { value in
+                        .onChange(of: frequency) { _, frequency in
                             guard let recurrenceFrequency = EKRecurrenceFrequency(rawValue: frequency) else {
                                 return
                             }
                             eventData.frequency = recurrenceFrequency
-                        })
+                        }
                     }
 
                     HStack {

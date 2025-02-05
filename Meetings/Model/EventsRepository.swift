@@ -70,7 +70,7 @@ final class EventsRepository: ObservableObject {
     }
     
     func requestAccess(onGranted: @escaping Action, onDenied: @escaping Action) {
-        eventStore.requestAccess(to: .event) { (granted, error) in
+        eventStore.requestFullAccessToEvents { (granted, error) in
             if granted {
                 onGranted()
             } else {
